@@ -28,7 +28,7 @@ function displayUserInfo(response) {
     var data = JSON.parse(response);
     if(data.data!=null){
     for(var i=0;i<data.data.onwardflights.length;i++){
-    //data.data.onwardflights[i].BPPrims.list[0];
+    
      val=data.data.onwardflights[i].origin;
     var obj = {};
     obj['origin'] = val;
