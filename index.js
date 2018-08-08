@@ -3,8 +3,11 @@ var btn = document.getElementById("btn");
 btn.addEventListener("click", getUserDetails);
 
 function getUserDetails() {
-    var ab = document.getElementById("a").innerText;
-    alert(ab);
+    var origin1=document.getElementById("origin1").value;
+    var d2=document.getElementById("d2").value;
+    var ddate1=document.getElementById("ddate1").value;
+    var adate1=document.getElementById("adate1").value;
+   
 
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
@@ -12,7 +15,7 @@ function getUserDetails() {
             displayUserInfo(request.responseText);
         }
     };
-    request.open("GET", "http://developer.goibibo.com/api/bus/search/?app_id=045ea148&app_key=3e449f37d35d060398943020050fcee5&format=json&source=lucknow&destination=delhi&dateofdeparture=20180820", true);
+    request.open("GET", "http://developer.goibibo.com/api/bus/search/?app_id=045ea148&app_key=3e449f37d35d060398943020050fcee5&format=json&source="+origin1+"&destination="+d2+"&dateofdeparture="+ddate1+"", true);
     request.send();
 }
 
@@ -21,7 +24,9 @@ var Detail=[];
 function displayUserInfo(response) {
     
     var val="";
+    
     var data = JSON.parse(response);
+    if(data.data!=null){
     for(var i=0;i<data.data.onwardflights.length;i++){
     //data.data.onwardflights[i].BPPrims.list[0];
      val=data.data.onwardflights[i].origin;
@@ -83,5 +88,9 @@ function displayUserInfo(response) {
     obj['SeatsAvailable'] = val;
     Detail.push(obj);
 
-}}
-console.log(Detail);
+}
+console.log(Detail);}
+else{
+    alert("error");
+}
+}
