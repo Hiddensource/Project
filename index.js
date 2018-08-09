@@ -5,9 +5,7 @@ btn.addEventListener("click", getUserDetails);
 function getUserDetails() {
     var origin1=document.getElementById("origin1").value;
     var d2=document.getElementById("d2").value;
-    var ddate1=document.getElementById("ddate1").value;
-    var adate1=document.getElementById("adate1").value;
-   
+    var ddate1=document.getElementById("ddate1").value;   
 
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
