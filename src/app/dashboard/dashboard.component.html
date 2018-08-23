@@ -1,0 +1,241 @@
+<app-header></app-header>
+
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="fluid-container">
+    <div class="row" id="header"> 
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <img class="img-fluid" width="100px" src="/assets/images/BTA.png" height="60px" alt="BTA" >  
+      <div class="col">
+       <h3 class="heading">Bus Ticket agregator</h3>
+        <!-- <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Login</button> -->
+        <i id="user_logo"class="fa fa-user-circle-o" style="font-size:24px"></i>
+        <!-- <i class="fa fa-user-circle-o" style="font-size:48px;color:red"></i> -->
+        <button id="btn_support" type="button" class="btn btn-link" data-toggle="collapse" data-target="#demo">SUPPORT</button>
+        <div id="demo" class="collapse">
+            Lorem ipsum dolor text....
+        </div>
+        <!-- <button type="button" class="btn btn-link">LOG IN/SIGN UP</button> -->
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row" id="first_row">
+        <div class="col-xl-2 col-lg-2 hidden-md-down" style="background-color:rgba(44, 43, 43, 0.671);">
+          <div class="row">
+            <div class="form-check">
+              <label class="form-check-label" for="radio1">
+                <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>one-way
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-check">
+              <label class="form-check-label" for="radio2">
+                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">two-way
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6" style="background-color:rgba(44, 43, 43, 0.671);">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="source" name="text2"  id="source"> 
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 " style="background-color:rgba(44, 43, 43, 0.671);">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Destination" name="text2" id="destination">
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6  col-6" style="background-color:rgba(44, 43, 44, 0.671);">
+          <div class="form-group">
+            <input type="date" class="form-control" placeholder="Date" name="text2" id="srcDate">
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6  col-6" style="background-color:rgba(44, 43, 43, 0.671);">
+          <div class="form-group">
+            <input type="date" class="form-control" placeholder="date" name="text2"  id="destDate" disabled>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col" style="background-color:rgba(44, 43, 43, 0.671);">
+          <input type="submit" class="btn btn-info" value="Submit Button" id="submit">
+        </div>
+    </div>  
+  </div>  
+  
+    <div class="container">
+        <div id="row-2" class="row" style="background-color:rgb(253, 253, 255);">
+            <div class="col">
+              <span id="src" style="color: #000;">source</span><i class="fa fa-arrow-right" aria-hidden="true" style="color: #000"></i><span id="dst" style="color: #000;">destination</span>
+            </div> 
+            <div class="col">
+              <span id="choosen_date" style="color: #000">choosen date</span>
+            </div>
+        </div>
+            
+        <div id="row-3" class="row" style="background-color:rgb(153, 153, 185);">
+            <div class="col-2 hidden-md-down" >
+                 filters
+            </div>
+            <div class="col-2" >
+                 <div class="dropdown">
+                  
+  
+              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="drpdwn">   <i id="time_logo" class="fa fa-clock-o" ></i>
+                Time
+              </button>
+              <ul class="dropdown-menu dropdown-menu-form">
+                  <li><label class="checkbox"><input type="checkbox">5:00-11:00</label></li>
+                  <li><label class="checkbox"><input type="checkbox">11:00-16:00</label></li>
+                  <li><label class="checkbox"><input type="checkbox">16:00-24:00</label></li>
+                  <li><label class="checkbox"><input type="checkbox">24:00-5:00</label></li>
+                </ul>
+              <!-- <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">5:00-11:00</a>
+                <a class="dropdown-item" href="#">11:00-16:00</a>
+                <a class="dropdown-item" href="#">16:00-24:00</a>
+                <a class="dropdown-item" href="#">24:00-5:00</a>
+              </div> -->
+            </div>
+    </div>
+    <div class="col-2" >
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="drpdwn" hidden-md-down><i class="material-icons" style="font-size:12px">edit_location</i>
+              B POINT
+            </button>
+            <ul class="dropdown-menu dropdown-menu-form">
+                <li><label class="checkbox"><input type="checkbox">ANAND VIHAR</label></li>
+                <li><label class="checkbox"><input type="checkbox">KASHMIRI GATE</label></li>
+                <li><label class="checkbox"><input type="checkbox">KAUSHAMBI</label></li>
+                <li><label class="checkbox"><input type="checkbox">VAISHALI</label></li>
+              </ul>
+          </div>
+  </div>
+  <div class="col-2" >
+      <div class="dropdown">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="drpdwn"><i class="material-icons" style="font-size:12px">edit_location</i>
+            D POINT
+          </button>
+          <ul class="dropdown-menu dropdown-menu-form">
+              <li><label class="checkbox"><input type="checkbox">PURANIA</label></li>
+              <li><label class="checkbox"><input type="checkbox">KAISAR BAGH</label></li>
+              <li><label class="checkbox"><input type="checkbox">ALAM BAGH</label></li>
+              <li><label class="checkbox"><input type="checkbox">LUCKNOW</label></li>
+            </ul>
+        </div>
+  </div>
+  <div class="col-2" >
+      <div class="dropdown">
+          
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="drpdwn"><i class="fa fa-bus" style="font-size:12px"></i>
+            operator
+          </button><ul class="dropdown-menu dropdown-menu-form">
+              <li><label class="checkbox"><input type="checkbox">UPSRTC</label></li>
+              <li><label class="checkbox"><input type="checkbox">HONEY TRAVELS</label></li>
+              <li><label class="checkbox"><input type="checkbox">MONEY TRAVELS</label></li>
+              <!-- <li><label class="checkbox"><input type="checkbox"></label></li> -->
+            </ul>
+          
+        </div>
+  </div>
+  <div class="col-2" >
+      <div class="dropdown">
+          
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="drpdwn"><i class="material-icons" style="font-size:12px">airline_seat_recline_normal</i>
+            Bus Type
+          </button>
+          <ul class="dropdown-menu dropdown-menu-form">
+              <li><label class="checkbox"><input type="checkbox">SLEEPER</label></li>
+              <li><label class="checkbox"><input type="checkbox">SEATER</label></li>
+              <li><label class="checkbox"><input type="checkbox">VOLVO</label></li>
+              <li><label class="checkbox"><input type="checkbox">ORDINARY</label></li>
+            </ul>
+          
+        </div>
+  </div>
+  
+    </div>
+     
+  
+  
+    
+  </div>
+  <div class="container">
+    <!-- <div class="row">
+      <div class="col-2">
+        Depart
+      </div>
+      <div class="col-2">
+        Duration
+      </div>
+      <div class="col-2">
+        Arrival
+      </div>
+      <div class="col-2">
+        Travels
+      </div>
+      <div class="col-2">
+        Seats
+      </div>
+      <div class="col-2">
+        Price
+      </div>
+    </div> -->
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Depart</th>
+            <th>Duration</th>
+            <th>Arrival</th>
+            <th>Travels</th>
+            <th>Seats</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>9:00</td>
+            <td>3 Hr</td>
+            <td>12:00</td>
+            <td>Singh Bus Service</td>
+            <td>13</td>
+            <td>399</td>
+          </tr>
+          <tr>
+              <td>9:00</td>
+              <td>3.4 Hr</td>
+              <td>12:20</td>
+              <td>UPSRTC</td>
+              <td>17</td>
+              <td>900</td>
+            
+           </tr>
+          <tr>
+              <td>9:00</td>
+              <td>3.5 Hr</td>
+              <td>12:30</td>
+              <td>Ram Travels</td>
+              <td>53</td>
+              <td>599</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+  
+  
+  
+   <!-- <div class="fluid-container" id="footer" "> -->
+     <div class="fixed-bottom"  style="background-color:rgb(10, 10, 10); height: 40px; color: white">
+     <div class="row" id="row4">
+  <div class="col">
+      © 2018 Tricon
+  </div>
+  
+     </div>
+    
+    
+   </div>
+  
+  
+  
+
+<app-footer></app-footer>

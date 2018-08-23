@@ -1,0 +1,15 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#d5d5d5;
+    color: white;
+    text-align: center;
+}
+.text{
+    COLOR: #000000;
+FONT-FAMILY: Poppins;
+FONT-SIZE: 12PX;
+text-align:left;
+}

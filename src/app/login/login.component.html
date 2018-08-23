@@ -1,0 +1,99 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="fluid-container">
+  <div class="row" id="header"> 
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="/assets/images/BTA.png" height="60px" >  
+    <div class="col-xl-9 col-lg-9 col-md-8 col-sm-7 col-6">
+     <h3 class="heading">Bus Ticket Agregator</h3>
+    </div>
+    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2" >
+      <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Login</button>
+    </div> 
+  </div>
+</div>
+
+<div class="form-check-inline">
+  <label class="form-check-label" for="One Way">
+    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>One Way  
+  </label>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <label class="form-check-label" for="Round trip">
+    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Round Trip
+  </label>
+</div>
+
+<div class="container" id="container1">
+  <!-- <div class="row">
+    <div class="col">
+      Source
+    </div>
+    <div class="col">
+      Destination
+    </div>    
+    <div class="col">
+      Select Departure Date
+    </div>
+    <div class="col">
+      Select Arrival Date
+    </div>
+    <div class="col">        
+    </div>
+  </div> -->
+
+  <div class="row">
+    <div class="col-md-3">
+      Enter Source: <br>
+      <input type="text" name="source" placeholder="Enter source" id = "searchTextField">
+    </div>
+    <div class="col-md-3">
+      Enter Destination: <br>
+      <input type="text" name="destination" placeholder="Enter destination">
+    </div>    
+    <div class="col-md-3">
+      Departure Date: <br>
+      <input type="date" name="departure" >
+    </div>
+    <div class="col-md-3">
+      Arrival Date: <br>
+       <input type="date" name="arrival" disabled id="arrival"  >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+        <br>
+      <button name="Submit" class="btn" routerLink="/dashboard">Search</button>
+      <br>
+      &nbsp;
+    </div>
+  </div>
+</div>
+ 
+
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+  
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>Login</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Login Details Here</p>
+      </div>     
+    </div>    
+  </div>
+</div>
+<div class="container" id="container2">
+  <div class="row">
+    <div class="col" style="margin:2px; border: 1px solid black">Famous Trips</div>
+    <div class="col" style="margin:2px; border: 1px solid black">Our Offers</div>
+    <div class="col" style="margin:2px; border: 1px solid black">Why Us</div>
+    
+  </div>
+</div>
+
+
+ 
+
+
